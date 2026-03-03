@@ -19,15 +19,15 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(135deg, #1a0026, #3b0a4f, #120018);
+    background: linear-gradient(135deg, #1a0026, #3b0a4f, #14001f);
     background-size: 200% 200%;
-    animation: gradientMove 12s ease infinite;
+    animation: gradientMove 15s ease infinite;
     color: #f8e9ff;
     text-align: center;
 }
 
 .container {
-    max-width: 800px;
+    max-width: 900px;
     padding: 40px;
     animation: fadeIn 2.5s ease forwards;
     opacity: 0;
@@ -39,7 +39,7 @@ h1 {
     font-weight: 400;
     line-height: 1.6;
     letter-spacing: 1px;
-    text-shadow: 0 0 15px rgba(255, 200, 255, 0.3);
+    text-shadow: 0 0 18px rgba(255, 200, 255, 0.35);
 }
 
 .button {
@@ -48,7 +48,7 @@ h1 {
     padding: 14px 48px;
     border-radius: 50px;
     background: rgba(255,255,255,0.08);
-    border: 1px solid rgba(255,255,255,0.3);
+    border: 1px solid rgba(255,255,255,0.35);
     color: #f8e9ff;
     text-decoration: none;
     font-size: 18px;
@@ -58,8 +58,27 @@ h1 {
 }
 
 .button:hover {
-    background: rgba(255,255,255,0.2);
+    background: rgba(255,255,255,0.25);
     transform: translateY(-4px);
+}
+
+/* 📱 Адаптация под телефон */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 38px;
+        line-height: 1.4;
+    }
+
+    .button {
+        font-size: 16px;
+        padding: 12px 36px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 28px;
+    }
 }
 
 @keyframes fadeIn {
@@ -72,6 +91,16 @@ h1 {
     100% { background-position: 0% 50%; }
 }
 </style>
+
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-K3ZEVXC92S');
+</script>
+
 </head>
 
 <body>
