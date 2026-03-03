@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>...</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #1a0026, #3b0a4f, #14001f);
+    background-size: 200% 200%;
+    animation: gradientMove 15s ease infinite;
+    color: #f8e9ff;
+    text-align: center;
+}
+
+.container {
+    max-width: 900px;
+    padding: 40px;
+    animation: fadeIn 2.5s ease forwards;
+    opacity: 0;
+}
+
+h1 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 56px;
+    font-weight: 400;
+    line-height: 1.6;
+    letter-spacing: 1px;
+    text-shadow: 0 0 18px rgba(255, 200, 255, 0.35);
+}
+
+.button {
+    margin-top: 70px;
+    display: inline-block;
+    padding: 14px 48px;
+    border-radius: 50px;
+    background: rgba(255,255,255,0.08);
+    border: 1px solid rgba(255,255,255,0.35);
+    color: #f8e9ff;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: serif;
+    transition: all 0.4s ease;
+    backdrop-filter: blur(6px);
+}
+
+.button:hover {
+    background: rgba(255,255,255,0.25);
+    transform: translateY(-4px);
+}
+
+/* 📱 Адаптация под телефон */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 38px;
+        line-height: 1.4;
+    }
+
+    .button {
+        font-size: 16px;
+        padding: 12px 36px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 28px;
+    }
+}
+
+@keyframes fadeIn {
+    to { opacity: 1; }
+}
+
+@keyframes gradientMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+</style>
+
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-K3ZEVXC92S');
+</script>
+
+</head>
+
+<body>
+
+<div class="container">
+    <h1>
+        Иногда достаточно одного шага,<br>
+        чтобы изменить ход событий...
+    </h1>
+
+    <a class="button" href="https://t.me/Sanjarbek_Orinbayev" target="_blank">
+        Продолжить историю
+    </a>
+</div>
+
+</body>
+</html>
