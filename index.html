@@ -90,6 +90,36 @@ h1 {
     50% { background-position: 100% 50%; }
     100% { background-position: 0% 50%; }
 }
+
+textarea {
+width: 100%;
+max-width: 420px;
+height: 110px;
+padding: 12px;
+border-radius: 12px;
+border: none;
+margin-top: 40px;
+font-size: 16px;
+resize: none;
+background: rgba(255,255,255,0.2);
+color: whithe;
+}
+
+button {
+margin-top: 5   px;
+padding: 12px 30px;
+border-radius: 30px;
+border: none;
+background: rgba(255,255,255,0.2);
+color: white;
+font-size: 16px;
+cursor: pointer;
+}
+
+button:hover {
+background: rgba(255,255,255,0.35);
+}
+
 </style>
 
     <!-- Google tag (gtag.js) -->
@@ -107,13 +137,24 @@ h1 {
 
 <div class="container">
     <h1>
-        Иногда достаточно одного шага,<br>
-        чтобы изменить ход событий...
+        Иногда первый шаг остаётся без ответа.<br>
+        Но это не повод не сделать второй...
     </h1>
 
     <a class="button" href="https://t.me/Sanjarbek_Orinbayev" target="_blank">
         Продолжить историю
     </a>
+
+<form name="comment" method="POST" data-netlify="true">
+
+<input type="hidden" name="form-name" value="comment" />
+
+<textarea name="message" placeholder="Оставить комментарий..." required></textarea>
+
+<button type="submit">Сохранить</button>
+
+</form>
+
 </div>
 
 </body>
